@@ -34,10 +34,6 @@ The project is a constituent of DS 5760: No SQL for Modern Data Science Applicat
 
    `docker exec -it redis-container-miniproject1 redis-cli`
 
-   Following is an example screenshot of redis-cli from my local execution:
-
-   ![Screenshot - Redis CLI](/redis-cli.png)
-
 ## Use of Generative AI
 
 1. `./utils/weather_information.py` - The code to build a functionality to fetch latest weather update for any valid location is being derived from ChatGPT.
