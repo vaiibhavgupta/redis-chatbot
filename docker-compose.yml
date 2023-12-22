@@ -1,0 +1,29 @@
+version: "1.0"
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis-container-miniproject1
+    ports:
+      - "6379:6379"
+    volumes:
+      - .:/usr/miniproject1
+    networks:
+      - app-network
+    command: redis-server --appendonly yes
+
+  python-app:
+    image: python:3.9-slim
+    container_name: python-container-miniproject1
+    depends_on:
+      - redis
+    volumes:
+      - ".:/usr/miniproject1"
+    networks:
+      - app-network
+    working_dir: /usr/miniproject1
+    command: tail -f /dev/null
+
+networks:
+  app-network:
+    driver: bridge

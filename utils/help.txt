@@ -1,0 +1,12 @@
+{}, no worries if you don't remember all the commands. Below is the list of commands I support:
+1. !help: provides you with the list of of commands.
+2. !weather [city or state](optional): provides weather update for [city or state] or your location.
+3. !fact: enlighten you with a random fun fact.
+4. !whoami: provides your user information.
+5. ~listen [channel]: lets you subscribe to channels.
+6. ~publish [channel]: lets you publish to channels.
+7. ~leave [channel]: lets you unsubscribe from channels. You cannot unsubscribe from your direct messages.
+8. ~dm [username]: allows you to send a direct message to a user only if you know receiver's unique username.
+9. ~fetch: get new messages from subscribed channels. Note: There is a lag when a message is sent and when it is published.
+10. @Exit: lets you exit the chatbot.
+Please Note: [channel] accepts only a single value. Any value you enter will be treated as channel's name as is.
